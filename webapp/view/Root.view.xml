@@ -1,0 +1,136 @@
+<mvc:View controllerName="com.gyansysWorkAssignment.controller.Root" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:viz="sap.viz.ui5.controls" xmlns:layout="sap.ui.layout" xmlns:table="sap.ui.table"
+	xmlns:smartTable="sap.ui.comp.smarttable" xmlns:commons="sap.suite.ui.commons" xmlns:u="sap.ui.unified">
+	<App>
+		<pages>
+			<Page title="Home" showHeader="true" enableScrolling="true">
+				<content>
+					<table:TreeTable id="TreeTable" rowHeight="0" columnHeaderHeight="0" rows="{/d/results}" SelectionMode="None" expandFirstLevel="false">
+						<table:columns>
+							<table:Column width="14rem">
+								<Label text="Object" wrapping="false" />
+								<table:template>
+									<Text text="{Object}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="14rem">
+								<Label text="ObjectDes"/>
+								<table:template>
+									<Text text="{ObjectDes}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="8rem">
+								<Label text="ObjectTyp"/>
+								<table:template>
+									<Text text="{ObjectTyp}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="Orig"/>
+								<table:template>
+									<Text text="{Orig}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="VendName"/>
+								<table:template>
+									<Text text="{VendName}"/>
+								</table:template>
+							</table:Column >
+							<table:Column width="6rem">
+								<Label text="CostEle"/>
+								<table:template>
+									<Text text="{CostEle}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="Department"/>
+								<table:template>
+									<Text text="{Department}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="Obudget"/>
+								<table:template>
+									<Text text="{Obudget}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="BudgetSup"/>
+								<table:template>
+									<Text text="{BudgetSup}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="BudgetTrf"/>
+								<table:template>
+									<Text text="{BudgetTrf}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="BudgetRed"/>
+								<table:template>
+									<Text text="{BudgetRed}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="BudgetAdj"/>
+								<table:template>
+									<Text text="{BudgetAdj}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="CommAmt"/>
+								<table:template>
+									<Text text="{CommAmt}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="Actual"/>
+								<table:template>
+									<Text text="{Actual}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="AgnAmt"/>
+								<table:template>
+									<Text text="{AgnAmt}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="AvaAmt"/>
+								<table:template>
+									<Text text="{AvaAmt}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="Uti"/>
+								<table:template>
+									<Text text="{Uti}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="OrgComm"/>
+								<table:template>
+									<Text text="{OrgComm}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="ConAmt"/>
+								<table:template>
+									<Text text="{ConAmt}"/>
+								</table:template>
+							</table:Column>
+							<table:Column width="6rem">
+								<Label text="ConNtSpend"/>
+								<table:template>
+									<Text text="{ConNtSpend}"/>
+								</table:template>
+							</table:Column>
+						</table:columns>
+					</table:TreeTable>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
